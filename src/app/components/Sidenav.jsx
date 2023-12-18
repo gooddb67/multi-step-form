@@ -1,3 +1,5 @@
-export default function Sidenav() {
-  return "Sidenav";
+import SidenavList from "./SidenavList";
+
+export default function Sidenav({ steps }) {
+  return <SidenavList steps={steps} />;
 }

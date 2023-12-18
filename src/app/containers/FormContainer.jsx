@@ -4,30 +4,30 @@ import PersonalInfo from "../pages/PersonalInfo";
 const navSteps = [
   {
     id: 1,
-    stepLabel: "STEP 1",
-    stepDescription: "YOUR INFO",
+    label: "STEP 1",
+    description: "YOUR INFO",
   },
   {
     id: 2,
-    stepLabel: "STEP 2",
-    stepDescription: "SELECT PLAN",
+    label: "STEP 2",
+    description: "SELECT PLAN",
   },
   {
     id: 3,
-    stepLabel: "STEP 3",
-    stepDescription: "ADD-ONS",
+    label: "STEP 3",
+    description: "ADD-ONS",
   },
   {
     id: 4,
-    stepLabel: "STEP 4",
-    stepDescription: "SUMMARY",
+    label: "STEP 4",
+    description: "SUMMARY",
   },
 ];
 
 export default function FormContainer() {
   return (
     <div>
-      <Sidenav />
+      <Sidenav steps={navSteps} />
       <PersonalInfo />
     </div>
   );
